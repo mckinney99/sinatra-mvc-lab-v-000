@@ -4,7 +4,7 @@ class PigLatinizer
     pigged_words = to_pig_latin(text)
   end
 
-  
+
   def to_pig_latin(text)
     words = text.split(" ").collect do |word|
       alphabet = ('a'..'z').to_a
@@ -25,9 +25,7 @@ class PigLatinizer
       else
         word
       end
-    end
+    
 
     words.join(" ")
   end
-
-
