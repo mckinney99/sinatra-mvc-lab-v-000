@@ -32,4 +32,4 @@ class PigLatinizer
   end
 end
 
-piglatinize.new("hello")
+PigLatinizer.new("hello")
