@@ -9,6 +9,6 @@ class App < Sinatra::Base
   post '/piglatinzer' do
     @text = params[:user_phrase]
     erb :results
-    
+
   end
 end
