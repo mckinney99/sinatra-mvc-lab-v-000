@@ -1,16 +1,18 @@
 class PigLatinizer
 
-  def initialize
-   end
-
-  def piglatinize(string)
-    words = string.split(" ").collect do |word|
-      if word[0].match(/[aeiou]/i)
-        word += "way"
-      else shift = word.split(/[aeiou]/).first
-        word[(shift.length)..-1] + shift + "ay"
+  def piglatinize(text)
+    text.split.map do |word|
+      if /\A[aeiou]/i.match(word)
+        "#{word}way"
+      else
+        cons = word.split(/[aeiou]/).first
+        "#{word.sub(cons,"")}#{cons}ay"
       end
+      end.join(' ')
     end
-    words.join(" ")
-  end
+
+  def to_pig_latin(text)
+    piglatinize(text)
+    end
+
 end
