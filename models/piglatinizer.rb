@@ -1,7 +1,7 @@
 class PigLatinizer
 
   def initialize(text)
-    words = to_pig_latin(text)
+    pigged_words = to_pig_latin(text)
   end
 
   
