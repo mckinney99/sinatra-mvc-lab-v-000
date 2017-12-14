@@ -32,5 +32,3 @@ class PigLatinizer
   end
 end
 
-p = PigLatinizer.new
-p.piglatinize("hello")
