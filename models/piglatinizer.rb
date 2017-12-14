@@ -23,7 +23,7 @@ class PigLatinizer
         first, second = word[0], word[1..-1]
         second + first + "ay"
       else
-        word
+        words
       end
     end
 
