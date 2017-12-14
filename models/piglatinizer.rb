@@ -31,3 +31,5 @@ class PigLatinizer
     words.join(" ")
   end
 end
+
+PigLatinize.new("hello")
